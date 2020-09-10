@@ -1,0 +1,119 @@
+body {
+	background-image: url(PIA12348_scaled_down_1920x959.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+	padding-top: 40px;
+}
+
+#welcometext h3 {
+	color: #D71E00;
+	text-shadow: 1px 1px #000000;
+	cursor: pointer;
+}
+
+#welcometext h3:hover {
+	color: #E48F00;
+	text-shadow: 2px 2px #000000;
+	cursor: pointer;
+}
+
+.twoButtonsContainer {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#githubbutton {
+	text-align: center;
+	display: inline;
+}
+
+#githubbutton input:hover {
+	font-weight: bold;
+}
+
+#gitlabbutton {
+	text-align: center;
+	display: inline;
+}
+
+#gitlabbutton input:hover {
+	font-weight: bold;
+}
+
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	25% { opacity: 1; }
+	50% { opacity: 0; }
+	75% { opacity: 1; }
+	100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	25% { opacity: 1; }
+	50% { opacity: 0; }
+	75% { opacity: 1; }
+	100% { opacity: 1; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	25% { opacity: 1; }
+	50% { opacity: 0; }
+	75% { opacity: 1; }
+	100% { opacity: 1; }
+}
+
+#gotobutton {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	width: 200px;
+}
+
+#gotobutton #gobutton:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	-webkit-animation: blink 2s infinite;
+	-moz-animation: blink 2s infinite;
+	-o-animation: blink 2s infinite;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+#flexbox {
+	width: 0;
+	height: auto;
+	padding: 10px 0 25px 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	animation: 1s 1s forwards growflexboxvertical, 1s 2s forwards growflexboxhorizontal;
+	-webkit-animation: 1s 0s forwards growflexbox;
+	-moz-animation: 1s 0s forwards growflexbox;
+	-o-animation: 1s 0s forwards growflexbox;
+}
+
+@keyframes growflexbox {
+	from { width: 10px; }
+	to { width: 615px; }
+}
+
+.flex-item {
+	opacity: 0;
+	animation: 1s 1s forwards fadein;
+	-webkit-animation: 1s 1s forwards fadein;
+	-moz-animation: 1s 1s forwards fadein;
+	-o-animation: 1s 1s forwards fadein;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
