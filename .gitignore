@@ -4,3 +4,8 @@ _site/
 .jekyll-metadata
 
 cgi-bin/
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.webp
